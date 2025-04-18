@@ -1,0 +1,147 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid layout */
+  .quiz-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Card styles */
+  .quiz-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 300px;
+    margin: 10px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+  
+  .quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Category specific colors */
+  .wap-category {
+    background-color: #dbeafe; /* Light blue */
+  }
+  
+  .wap-category .icon,
+  .wap-category .category-title {
+    color: #2563eb; /* blue */
+    align-items: center;
+  }
+  
+  .psp-category {
+    background-color: #d1fae5; /* Light green */
+  }
+  
+  .psp-category .icon,
+  .psp-category .category-title {
+    color: #10b981; /* green */
+  }
+  
+  .dsa-category {
+    background-color: #ede9fe; /* Light purple */
+  }
+  
+  .dsa-category .icon,
+  .dsa-category .category-title {
+    color: #8b5cf6; /* purple */
+  }
+  
+  /* Card sections */
+  .card-header {
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Ensures the content is horizontally centered */
+  }
+  
+  .icon-title {
+    display: flex;
+    align-items: center; /* Vertically aligns the icon and title */
+    gap: 10px; /* Adds spacing between the icon and title */
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .card-footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  
+  .start-button:hover {
+    background-color: #444;
+  }
