@@ -91,18 +91,34 @@ function Home() {
   // quizCards
 
   return (
-    <div>
-      <div>
-          {
-            quizData.map((item)=>{
-                return <div className= "quiz-card" key={item.id}>
-                <div className="card-header">{item.title}</div>
-                <div className="card-body">{item.description}</div>
-                <div className="start-button"> Start Quiz</div>
+    <div className="container">
+      <h1 className="main-title">Student Quiz Platform</h1>
+      <p className="subtitle">Select a subject to test your knowledge and see how you rank against your peers.</p>
+
+      <div className="quiz-grid">
+        {quizData.map((category) => (
+          <div key={category.id} className={`quiz-card`}>
+            {/* First div - Icon with colored background */}
+            <div className={`card-header ${category.colorClass}`}>
+              <div className="icon-title">
+                <span className="icon">{category.icon}</span>
+                <h2 className="category-title">{category.title}</h2>
               </div>
-            })
-          }
-        
+            </div>
+
+            {/* Second div - Description paragraph */}
+            <div className="card-body">
+              <p className="category-description">{category.description}</p>
+            </div>
+
+            {/* Third div - Button */}
+            <div className="card-footer">
+              <a  className="start-button">
+                Start Quiz
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
     );
