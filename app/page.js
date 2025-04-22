@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Header from "@/components/Header";
 
 import './page.css'
+import Content from "@/components/Content";
+import Footer from "@/components/Footer";
 
 const Globe = () => (
   <svg
@@ -99,26 +102,16 @@ function Home() {
         {quizData.map((category) => (
           <div key={category.id} className={`quiz-card`}>
             {/* First div - Icon with colored background */}
-            <div className={`card-header ${category.colorClass}`}>
-              <div className="icon-title">
-                <span className="icon">{category.icon}</span>
-                <h2 className="category-title">{category.title}</h2>
-              </div>
-            </div>
-
+            
+            <Header category={category}/>
             {/* Second div - Description paragraph */}
-            <div className="card-body">
-              <p className="category-description">{category.description}</p>
-            </div>
+           <Content category={category}/>
 
             {/* Third div - Button */}
-            <div className="card-footer">
-              <a  className="start-button">
-                Start Quiz
-              </a>
-            </div>
+            <Footer/>
           </div>
         ))}
+        
       </div>
     </div>
     );
