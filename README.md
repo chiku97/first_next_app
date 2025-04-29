@@ -28,7 +28,8 @@ https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/question
 https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
 example body for POST request:
 
-```json{
+```json
+{
   "createdAt": "2025-04-25T10:55:00Z",
   "question": "Which of the following is a characteristic of a stack data structure?",
   "options": [
@@ -40,7 +41,8 @@ example body for POST request:
   "correctOption": "Follows LIFO (Last In First Out) order",
   "level": "easy",
   "category": "PSP"
-}```
+}
+```
 
 
 ## Learn More
