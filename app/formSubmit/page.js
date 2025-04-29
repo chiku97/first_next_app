@@ -78,9 +78,7 @@ function QuizForm() {
           </div>
         </div>
 
-        <Link href={{
-          pathname: '/question',
-        }} className="start-button">Start Quiz</Link>
+        <Link href='/question' className="start-button">Start Quiz</Link>
       </div>
     </div>
   );

@@ -22,7 +22,6 @@ export default function Question() {
   }
 
   const handleQuestion = (e,item)=>{
-    console.log(name)
     ref.current = e.target
     console.log(item.options[e.target.value] === item.correctOption)
     if(item.options[e.target.value] === item.correctOption){
