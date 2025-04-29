@@ -26,6 +26,7 @@ https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/question
 
 ## For adding more data on the list (POST request)
 https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
+
 example body for POST request:
 
 ```json
