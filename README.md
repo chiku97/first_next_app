@@ -18,11 +18,30 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 
-## for question list this is the api that is used
+## for question list, this is the api that is used (GET request)
 https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
 
-## for category-wise display
+## for category-wise display (GET request)
 https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions?category=${subject}&page=${page}&limit=1
+
+## For adding more data on the list (POST request)
+https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
+example body for POST request:
+
+```json{
+  "createdAt": "2025-04-25T10:55:00Z",
+  "question": "Which of the following is a characteristic of a stack data structure?",
+  "options": [
+    "Follows FIFO (First In First Out) order",
+    "Follows LIFO (Last In First Out) order",
+    "Allows access to any element at any time",
+    "None of the above"
+  ],
+  "correctOption": "Follows LIFO (Last In First Out) order",
+  "level": "easy",
+  "category": "PSP"
+}```
+
 
 ## Learn More
 
