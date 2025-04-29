@@ -16,9 +16,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## for question list this is the api that is used
+https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
+
+## for category-wise display
+https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions?category=${subject}&page=${page}&limit=1
 
 ## Learn More
 
