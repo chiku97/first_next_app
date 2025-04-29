@@ -19,13 +19,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## for question list, this is the api that is used (GET request)
-https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
+Endpoint: https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
 
 ## for category-wise display (GET request)
-https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions?category=${subject}&page=${page}&limit=1
+Endpoint: https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions?category=${subject}&page=${page}&limit=1
 
 ## For adding more data on the list (POST request)
-https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
+Endpoint: https://6805f6b0ca467c15be6a9494.mockapi.io/wapcohort2dummyapi/students/questions
 
 example body for POST request:
 
