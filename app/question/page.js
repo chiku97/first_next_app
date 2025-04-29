@@ -31,7 +31,7 @@ export default function Question() {
   }
 
   return (
-    <div>
+    <div style={{display:"flex", alignContent:"center", alignItems:"center"}}>
 
       <div>
        <div><button style={{height:"40px",margin:"5px", width:"100px", background:"blue", color:"white"}} value={1} onClick={(e)=>handleClick(e)}>1</button></div>
@@ -40,6 +40,7 @@ export default function Question() {
        <div><button style={{height:"40px", width:"100px", background:"blue",margin:"5px", color:"white"}} value={4} onClick={(e)=>handleClick(e)}>4</button></div>
 
         </div>
+        <div >
 
       {data.map((item)=> {
         return <>
@@ -53,6 +54,7 @@ export default function Question() {
           </div>
         </>
       })}
+      </div>
     </div>
   )
 }
